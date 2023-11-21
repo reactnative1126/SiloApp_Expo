@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "strict": true,
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "app/navigations/index.js"
+, "app/screens/auth/Login..js", "app/stores/user/user.state.js", "app/stores/user/user.actions.js", "app/stores/system/system.state.js", "app/stores/system/system.actions.js", "app/stores/actions/actions.types.js", "app/stores/auth/auth.state.js", "app/stores/analytics/analytics.types.js", "app/stores/actions/actions.types.js", "app/stores/auth/auth.actions.js", "app/stores/analytics/analytics.actions.js", "app/stores/actions/actions.actions.js", "app/stores/actions/actions.types.js", "app/stores/actions/actions.actions.js", "app/services/requests.js", "app/services/request-wrapper.js", "app/services/misc.js", "app/screens/auth/Signup.js"  ]
+}
