@@ -1,0 +1,54 @@
+{
+  "cli": {
+    "version": ">= 3.4.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium",
+         "simulator": true
+      }
+    },
+    "production": {
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "env": {
+        "EXPO_PUBLIC_ENV": "production",
+        "EXPO_PUBLIC_API_URL": "https://rebelfi.io/api/chain",
+        "EXPO_PUBLIC_ENABLE_LOGGING": "false",
+        "EXPO_PUBLIC_ENABLE_BUGSNAG": "true",
+        "EXPO_PUBLIC_BUGSNAG_APIKEY": "ef726d88ba9b7847a082ff87ab1e65aa",
+        "EXPO_PUBLIC_ENABLE_ANALYTICS": "true",
+        "EXPO_PUBLIC_MIXPANEL_URL": "https://rebelfi.io/mix/",
+        "EXPO_PUBLIC_MIXPANEL_PROJECT_TOKEN": "9fe4270e26c91572ba1f1f970fda7a01"
+      }
+    },
+    "staging": {
+      "ios": {
+        "resourceClass": "m-medium"
+      },
+      "env": {
+        "EXPO_PUBLIC_ENV": "dev",
+        "EXPO_PUBLIC_API_URL": "https://staging.rebelfi.io/api/chain",
+        "EXPO_PUBLIC_ENABLE_LOGGING": "true",
+        "EXPO_PUBLIC_ENABLE_BUGSNAG": "true",
+        "EXPO_PUBLIC_BUGSNAG_APIKEY": "ef726d88ba9b7847a082ff87ab1e65aa",
+        "EXPO_PUBLIC_ENABLE_ANALYTICS": "true",
+        "EXPO_PUBLIC_MIXPANEL_URL": "https://rebelfi.io/mix/",
+        "EXPO_PUBLIC_MIXPANEL_PROJECT_TOKEN": "3977f5056d63864ada47139c20b55ef1"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

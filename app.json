@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "RebelFi",
-    "slug": "app-fi",
+    "slug": "rebelfi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,13 +16,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow RebelFi to access camera.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      },
+      "bundleIdentifier": "io.rebelfi.rebelapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "useNextNotificationsApi": true,
+      "permissions": [
+        "INTERNET",
+        "android.permission.CAMERA"
+      ],
+      "config": {
+        "cleartext": {
+          "include": [
+            "http://localhost:3000"
+          ]
+        }
+      },
+      "package": "io.rebelfi.rebelapp"
     },
     "web": {
       "bundler": "metro",
@@ -36,10 +54,23 @@
         {
           "cameraPermission": "Allow RebelFi to access camera."
         }
-      ]
+      ],
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "permissions": {
+      "camera": {
+        "allowsRecording": true,
+        "aspect": [
+          4,
+          3
+        ]
+      },
+      "mediaLibrary": {
+        "writeonly": true
+      }
     }
   }
 }
