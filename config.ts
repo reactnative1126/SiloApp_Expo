@@ -1,11 +1,9 @@
-import { Mixpanel } from 'mixpanel-react-native';
+import { Mixpanel } from "mixpanel-react-native";
 import Userfront from '@userfront/core';
 
-// import { log } from './app/services/functions';
-
 export enum Env {
-  DEV = 'development',
-  PROD = 'production',
+  DEV = "development",
+  PROD = "production",
 }
 
 export const ENV = process.env.EXPO_PUBLIC_ENV === 'prod' || process.env.EXPO_PUBLIC_ENV === 'production' ? Env.PROD : Env.DEV;
@@ -30,7 +28,6 @@ export function analyticsEnabled() {
 }
 
 async function getMixpanel() {
-  // log('getMixpanel: ', mixpanel);
   /*
   if (process.env.EXPO_PUBLIC_ENABLE_ANALYTICS === 'true' && !mixpanel) {
     const tracAutomaticEvents = true;
@@ -38,7 +35,7 @@ async function getMixpanel() {
     await mixpanel.init(undefined, undefined, process.env.EXPO_PUBLIC_MIXPANEL_URL as string);
     return mixpanel;
   } else {
-    throw new Error('Mixpanel not enabled');
+    throw new Error("Mixpanel not enabled");
   }
 
    */
