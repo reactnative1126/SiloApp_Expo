@@ -22,7 +22,7 @@ This is a new [**React Native**](https://reactnative.dev), [**Expo**](https://ex
 
 Welcome to my project! Below are my favorite videos & screenshots related to this project:
 
-<a href="https://vimeo.com/958085780">
+<a href="https://youtu.be/s4kXS9HBjRc">
    <img src="https://github.com/reactnative1126/SiloApp_Expo/blob/master/app/assets/screens/1.png" width="500" alt="Screen 3" hspace="5">
 </a>
 
